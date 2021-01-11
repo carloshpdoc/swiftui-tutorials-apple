@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct EditView: View {
-    @State private var scrumData: DailyScrum.Data = DailyScrum.Data()
-    @State private var newAttendees = ""
+    @Binding var scrumData: DailyScrum.Data
+    @State private var newAttendee = ""
     
     var body: some View {
         List {
@@ -34,17 +34,17 @@ struct EditView: View {
                     scrumData.attendees.remove(atOffsets: indexSet)
                 }
                 HStack {
-                    TextField("New Attendee", text: $newAttendees)
+                    TextField("New Attendee", text: $newAttendee)
                     Button(action: {
                         withAnimation {
-                            scrumData.attendees.append(newAttendees)
-                            newAttendees = ""
+                            scrumData.attendees.append(newAttendee)
+                            newAttendee = ""
                         }
                     }) {
                         Image(systemName: "plus.circle.fill")
                             .accessibilityLabel(Text("Add attendee"))
                     }
-                    .disabled(newAttendees.isEmpty)
+                    .disabled(newAttendee.isEmpty)
                 }
             }
         }
@@ -54,6 +54,6 @@ struct EditView: View {
 
 struct EditView_Previews: PreviewProvider {
     static var previews: some View {
-        EditView()
+        EditView(scrumData: .constant(DailyScrum.data[0].data))
     }
 }
