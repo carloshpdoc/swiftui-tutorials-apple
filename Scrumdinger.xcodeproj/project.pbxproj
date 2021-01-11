@@ -15,6 +15,7 @@
 		A8777B4625915E300074103D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8777B4525915E300074103D /* Assets.xcassets */; };
 		A8777B4925915E300074103D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8777B4825915E300074103D /* Preview Assets.xcassets */; };
 		A8777B5425915FFE0074103D /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8777B5325915FFE0074103D /* DailyScrum.swift */; };
+		A8BA147F25ACED9300CF99BE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA147E25ACED9300CF99BE /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A8777B4825915E300074103D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8777B4A25915E300074103D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8777B5325915FFE0074103D /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		A8BA147E25ACED9300CF99BE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				A87029D225923F5200D2D56C /* CardView.swift */,
 				A8777B4325915E2D0074103D /* MeetingView.swift */,
 				A87029DB2592827000D2D56C /* ScrumsView.swift */,
+				A8BA147E25ACED9300CF99BE /* DetailView.swift */,
 				A8777B4525915E300074103D /* Assets.xcassets */,
 				A8777B4A25915E300074103D /* Info.plist */,
 				A8777B4725915E300074103D /* Preview Content */,
@@ -161,6 +164,7 @@
 				A8777B4425915E2D0074103D /* MeetingView.swift in Sources */,
 				A87029DC2592827000D2D56C /* ScrumsView.swift in Sources */,
 				A8777B5425915FFE0074103D /* DailyScrum.swift in Sources */,
+				A8BA147F25ACED9300CF99BE /* DetailView.swift in Sources */,
 				A87029D325923F5200D2D56C /* CardView.swift in Sources */,
 				A87029D725924AB100D2D56C /* Color+Codable.swift in Sources */,
 				A8777B4225915E2D0074103D /* ScrumdingerApp.swift in Sources */,
